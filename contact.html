@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .about {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .disp {
+        padding: 8px;
+        height: 100px;
+        width: 400px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 3px;
+      }
+      .name {
+        text-decoration: none;
+        width: 200px;
+      }
+      .name input {
+        margin: 5px;
+        border: 1px solid rgb(165, 165, 165);
+        background-color: rgb(255, 255, 255);
+        width: 300px;
+        height: 20px;
+        text-align: center;
+      }
+      .email input {
+        margin: 5px;
+        border: 1px solid rgb(165, 165, 165);
+        width: 300px;
+        height: 20px;
+        text-align: center;
+      }
+      .heading {
+        display: flex;
+        justify-content: center;
+      }
+      .message input {
+        margin: 5px;
+        border: 1px solid rgb(165, 165, 165);
+        width: 300px;
+        height: 150px;
+        text-align: center;
+      }
+      .btn button {
+        font-size: 15px;
+        background-color: rgb(184, 154, 154);
+        margin-left: 100px;
+        width: 130px;
+        height: 39px;
+        border-radius: 25px;
+        border: 0px;
+      }
+      button:hover {
+        background-color: rgb(83, 67, 67);
+      }
+      .address {
+        color: white;
+        display: block;
+        width: 300px;
+        text-align: center;
+      }
+      .address a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+    <title>Headphones store - Contact</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="main">
+      <main>
+        <div class="about">
+          <div class="form">
+            <div class="heading">
+              <h2>Send us your message</h2>
+            </div>
+            <div class="name">
+              <input id="name" type="text" placeholder="Name" />
+            </div>
+            <div class="email">
+              <input id="email" type="text" placeholder="Email" />
+            </div>
+            <div class="message">
+              <input
+                id="message"
+                type="text"
+                placeholder="Write your message"
+              />
+            </div>
+            <div class="btn">
+              <button id="btn" onclick="cleartext()">send</button>
+            </div>
+            <div class="address">
+              <p>
+                our physical address- 17th cross 1st stage kumaraswamy layout
+                bengaluru. you can also mail us for enquries at
+                <a href="">bloatlifestyle@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
